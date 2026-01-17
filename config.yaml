@@ -1,0 +1,128 @@
+baseurl: https://mnasimi.github.io/my-blog/
+languageCode: en-us
+title: My Tech Blog
+theme: hugo-theme-stack
+
+pagination:
+  pagerSize: 10
+
+permalinks:
+  post: /p/:slug/
+  page: /:slug/
+
+params:
+  mainSections:
+    - post
+  featuredImageField: image
+  rssFullContent: true
+  favicon:
+
+  footer:
+    since: 2024
+    customText:
+
+  dateFormat:
+    published: Jan 02, 2006
+    lastUpdated: Jan 02, 2006 15:04 MST
+
+  sidebar:
+    compact: false
+    emoji:
+    subtitle: Programming, Architecture, Leadership & ML
+    avatar:
+      enabled: true
+      local: true
+      src: img/avatar.png
+
+  article:
+    math: false
+    toc: true
+    readingTime: true
+    license:
+      enabled: false
+
+  comments:
+    enabled: false
+
+  widgets:
+    homepage:
+      - type: search
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 20
+    page:
+      - type: toc
+
+  colorScheme:
+    toggle: true
+    default: auto
+
+  imageProcessing:
+    cover:
+      enabled: true
+    content:
+      enabled: true
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+      params:
+        icon: home
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 2
+      params:
+        icon: categories
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 3
+      params:
+        icon: archives
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 4
+      params:
+        icon: search
+
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/mnasimi
+      params:
+        icon: brand-github
+
+related:
+  includeNewer: true
+  threshold: 60
+  toLower: false
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 200
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    tabWidth: 4

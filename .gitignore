@@ -1,3 +1,8 @@
+# Hugo
+public/
+resources/_gen/
+.hugo_build.lock
+
 # IDE
 .idea/
 .vscode/
@@ -7,6 +12,9 @@
 # OS
 .DS_Store
 Thumbs.db
+
+# Node (if using npm for assets)
+node_modules/
 
 # Claude
 .claude/
