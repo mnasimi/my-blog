@@ -1,6 +1,6 @@
 # My Tech Blog
 
-Personal blog by Meysam Nasimi.
+Personal blog by Meysam.
 
 **Senior full-stack engineer focused on system design, technical leadership, and practical ML.**
 
